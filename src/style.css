@@ -9,6 +9,12 @@
         width: 33em !important;
     }
   }
+@media (max-width: 541px) {
+    .webgl{
+        height: 14em !important;
+        width: 23em !important;
+    }
+  }
 @media (max-width: 400px) {
     .webgl{
         height: 10em !important;

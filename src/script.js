@@ -293,7 +293,9 @@ const sizes = {
  * Camera
  */
 // Base camera
-const camera = new THREE.PerspectiveCamera(4, window.innerWidth / window.innerHeight, 2, 2000)
+const camera = new THREE.PerspectiveCamera(4, 1629 / 888, 2, 1000)
+console.log(window.innerHeight)
+console.log(window.innerWidth)
 camera.position.x = 0
 camera.position.y = -2
 camera.position.z = 100
@@ -301,7 +303,7 @@ scene.add(camera)
 
 const computer = new THREE.Group()
 let screenScene = screen()
-screenScene.position.y=.02
+screenScene.position.y = .02
 let keyboardScene = keyboard()
 let clavierScene = clavier()
 
@@ -323,6 +325,14 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 const clock = new THREE.Clock()
+
+// window.addEventListener('resize', function () {
+//     camera.aspect = contenedor.clientWidth / contenedor.clientHeight;
+
+//     camera.updateProjectionMatrix();
+
+//     renderer.setSize(contenedor.clientWidth, contenedor.clientHeight);
+// })
 
 function animate() {
 
