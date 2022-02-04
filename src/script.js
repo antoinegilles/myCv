@@ -62,7 +62,6 @@ function screen() {
         object.children[0].material.color.r = 0
         object.children[0].material.color.g = 0
         object.children[0].material.color.b = 0
-        console.log(object)
 
         screen.add(object)
     })
@@ -294,7 +293,7 @@ const sizes = {
  * Camera
  */
 // Base camera
-const camera = new THREE.PerspectiveCamera(5, window.innerWidth / window.innerHeight, 1, 1000)
+const camera = new THREE.PerspectiveCamera(4, window.innerWidth / window.innerHeight, 2, 2000)
 camera.position.x = 0
 camera.position.y = -2
 camera.position.z = 100

@@ -92,18 +92,11 @@
         </section>
 
         <section id="features" class="grey lighten-3">
-          <div class="py-12"></div>
+          <div class="py-3"></div>
 
           <v-container class="text-center">
-            <h2 class="display-2 font-weight-bold mb-3">Project</h2>
 
             <canvas class="webgl"></canvas>
-
-            <v-responsive class="mx-auto mb-12" width="56">
-              <v-divider class="mb-1"></v-divider>
-
-              <v-divider></v-divider>
-            </v-responsive>
 
             <v-row>
               <v-col v-for="({ icon, title, text }, i) in features" :key="i" cols="12" md="4">
@@ -257,10 +250,5 @@
 <style>
   .rotateT {
     transform: rotate(180deg) !important;
-  }
-
-  .webgl {
-    height: 3em;
-    width: 3em;
   }
 </style>
