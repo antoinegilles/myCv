@@ -1,6 +1,6 @@
 .webgl{
     height: 37em !important;
-    width: 54em !important;
+    width: 65em !important;
 }
 /* On screens that are 600px or less, set the background color to olive */
 @media (max-width: 915px) {
