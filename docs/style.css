@@ -1,0 +1,130 @@
+.webgl {
+    height: 30em !important;
+    width: 55em !important;
+}
+
+/* Animation css numeros */
+.numero1::after {
+    content: counter(count);
+    animation: counter1 2s linear;
+    
+}
+.numero2::after {
+    content: counter(count);
+    animation: counter2 1s linear;
+    counter-reset: count 0;
+}
+.numero3::after {
+    content: counter(count);
+    animation: counter3 5s linear;
+    counter-reset: count 0;
+}
+
+@keyframes counter1 {
+    0% {
+        counter-increment: count 0;
+    }
+
+    10% {
+        counter-increment: count 1;
+    }
+
+    20% {
+        counter-increment: count 2;
+    }
+
+    30% {
+        counter-increment: count 3;
+    }
+
+    40% {
+        counter-increment: count 4;
+    }
+    100% {
+        counter-increment: count 5;
+    }
+}
+@keyframes counter2 {
+    0% {
+        counter-increment: count 0;
+    }
+
+    10% {
+        counter-increment: count 1;
+    }
+
+    20% {
+        counter-increment: count 2;
+    }
+
+    30% {
+        counter-increment: count 3;
+    }
+
+    40% {
+        counter-increment: count 4;
+    }
+
+    50% {
+        counter-increment: count 5;
+    }
+
+    100% {
+        counter-increment: count 6;
+    }
+}
+@keyframes counter3 {
+    0% {
+        counter-increment: count 0;
+    }
+
+    10% {
+        counter-increment: count 1;
+    }
+
+    20% {
+        counter-increment: count 2;
+    }
+
+    30% {
+        counter-increment: count 3;
+    }
+
+    40% {
+        counter-increment: count 4;
+    }
+
+    50% {
+        counter-increment: count 5;
+    }
+
+    60% {
+        counter-increment: count 6;
+    }
+
+    100% {
+        counter-increment: count 7;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media (max-width: 915px) {
+    .webgl {
+        height: 20em !important;
+        width: 33em !important;
+    }
+}
+
+@media (max-width: 541px) {
+    .webgl {
+        height: 14em !important;
+        width: 23em !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .webgl {
+        height: 10em !important;
+        width: 18em !important;
+    }
+}
